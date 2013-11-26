@@ -1,0 +1,105 @@
+/* general
+-------------------------------------------------------- 
+*/
+
+html,body{margin:0;padding:0;} /* Common margin & padding for all browsers */
+html{overflow-y:scroll;} /* Always display the scrollbar, avoid flipping pages */
+
+html{background:#e6e6e6;} /* Background color for whole browser window */
+body{background:000;} /* Background color for the body-part of the browser window */ 
+
+body{font-family:Georgia, serif;color:#333;} /* Default font for whole page */
+
+h1{text-transform:uppercase;} /* Transform all letter to uppercase. */
+h1,h2{border-bottom:1px solid #dddddd;overflow:auto;} /* Put border below header h1 and h2 */
+
+img {border:0;} /* No border around linked images */
+
+
+/* html5 elements
+-------------------------------------------------------- 
+*/
+
+header,footer,nav,article,section,aside,figure,figcaption{display:block;}
+
+
+/* page structure
+-------------------------------------------------------- 
+
+	Layout and size of header, content and footer
+	
+*/
+
+/* the header with navigation to related links */
+header#above{background:#029939;font-family:arial,helvetica,sans-serif;border-bottom:1px solid #000;margin-bottom:4px;color:#000;text-transform:uppercase;}
+
+/* set width and center page */
+div#header,
+div#main,
+div#footer,
+div#navbar{margin:0 auto;width:900px;}
+
+/* clearer-fix */
+div#coent{overflow:auto;} 
+
+
+/* a links
+-------------------------------------------------------- 
+*/
+
+a {color: inherit; outline:0;}
+a:link    { }
+a:visited { }
+a:hover   { text-decoration:none; color:#5C0A0A; }
+a:active  { }
+
+
+/* navigation menu
+-------------------------------------------------------- 
+*/
+
+.navbar {display block;background-color:#333;font-family:Verdana;padding:0.5em;}
+.navbar a {background-color:#999;color:#fff;padding:0.2em;text-decoration:none;}
+.navbar a:hover {background-color:#666;padding:0.5em 0.2em 0.5em 0.2em}
+.navbar a.selected {background-color:#fff;padding:0.3em 0.2em 0.5em 0.2em;color:#333;}
+
+	
+	
+/* figure & figcaption
+-------------------------------------------------------- 
+*/
+
+figure {margin:1.5em;text-align:center;}
+figcaption {font-style:italic;font-size:smaller;}
+
+
+
+/* Misc classes
+-------------------------------------------------------- 
+*/
+
+.right {float:right;}
+.left {float:left;}
+
+.small { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+
+
+/* Use this to create a horizontal ruler across a column. 
+----------------------------------------------------------
+*/
+
+hr {
+  background: #ddd;
+  color: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 1.45em;
+  border: none;
+}
+
+
+
+
