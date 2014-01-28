@@ -27,4 +27,13 @@ function myAutoloader($class) {
     throw new Exception("Classfile '{$class}' does not exists.");
   }
 }
+
+/**
+ * Print content of an array
+ *
+ */
 spl_autoload_register('myAutoloader');
+
+function dump($array) {
+  echo "<pre>" . htmlentities(print_r($array, 1)) . "</pre>";
+}

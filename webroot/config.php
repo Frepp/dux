@@ -55,7 +55,7 @@ $dux['header'] = <<<EOD
 EOD;
 
 $dux['footer'] = <<<EOD
-<footer><span class='sitefooter'>Copyright (c) Fredrik Peterson (fpeterson94@gmail.com) | <a href='https://github.com/mosbth/Anax-base'>Dux på GitHub</a> | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span></footer>
+<footer>Copyright (c) YOU </footer>
 EOD;
 
 /**
@@ -63,14 +63,16 @@ EOD;
 *
 */
 
+
 //$speedy['navbar'] = null; // To skip the navbar 
 $dux['navbar'] = array( 
         'class' => 'navbar', 
         'items' => array( 
-                'hem'         => array('text'=>'Hem',         'url'=>'me.php',          'title' => 'Min presentation om mig själv'), 
-                'redovisning' => array('text'=>'Redovisning', 'url'=>'report.php', 'title' => 'Redovisningar för kursmomenten'), 
-                'kallkod'     => array('text'=>'Källkod',     'url'=>'source.php',      'title' => 'Se källkoden'), 
-        ), 
+                'home'         => array('text'=>'Home',         'url'=>'index.php',          'title' => 'Home'),  
+                 
+        ),
+		
+		 
         'callback_selected' => function($url) { 
             if(basename($_SERVER['SCRIPT_FILENAME']) == $url) { 
                 return true; 
@@ -85,3 +87,18 @@ $dux['navbar'] = array(
  */
 $dux['stylesheets'] = array('css/style.css');
 $dux['favicon']    = 'img/favicon.ico';
+
+/**
+ * Settings for the database.
+ *
+ */
+$dux['database']['dsn']            = 'mysql:host=;dbname=;';
+$dux['database']['username']       = '';
+$dux['database']['password']       = '';
+$dux['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'");
+
+/**
+ * Set constants
+ *
+ */
+
